@@ -18,7 +18,7 @@ const ColumnForm = props => {
             <TextInput value={title} onChange={e => setTitle(e.target.value)} />
             <span>Icon:</span>
             <TextInput value={icon} onChange={e => setIcon(e.target.value)} />
-            <Button>Add column</Button>
+            <Button type="submit">Add column</Button>
         </form>
     );
 };

@@ -1,40 +1,64 @@
 @import '../../styles/settings.scss';
 
 .header {
-    background-image: url('http://uploads.kodilla.com/bootcamp/fer/11.react/space.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: ($base-size * 15);
-    margin: 0 0 ($base-size * 3) 0;
-    overflow: hidden;
-    border-radius: $radius;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url('http://uploads.kodilla.com/bootcamp/fer/11.react/space.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: ($base-size * 15);
+  margin: 40px 0 ($base-size * 3) 0;
+  overflow: hidden;
+  border-radius: $radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
-    font-size: ($base-size * 2.5);
-    text-transform: uppercase;
-    color: $color-light;
+  font-size: ($base-size * 2.5);
+  text-transform: uppercase;
+  color: $color-light;
+  animation: zoomIn 6s infinite;
 
-    span {
-        font-size: 75%;
-        line-height: 0;
-        position: relative;
-        vertical-align: baseline;
-        top: -$base-size;
-    }
+  span {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -$base-size;
+    color: $color-success;
+    animation: zoomIn 6s infinite;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .description {
-    margin: 0 0 36px;
-    text-align: center;
+  margin: 0 0 36px;
+  text-align: center;
+  -webkit-text-stroke: 1px $color-dark;
+  background: linear-gradient(to right, $color-success, $color-warning);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .columns {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

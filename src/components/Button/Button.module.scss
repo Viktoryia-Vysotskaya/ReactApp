@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 .button {
-    background: $color-success;
+    background: linear-gradient(to right, $color-one, $color-two);  
     border: 0;
     color: $color-light;
     text-align: center;
@@ -15,7 +15,8 @@
     transition: $transition;
 
     &:hover {
-        background: darken($color-success, 5%);
+        background: $color-two;
+        color: $color-one;
     }
 
     &.danger {
@@ -34,3 +35,9 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .button {
+        width: 120px;
+      }
+  }

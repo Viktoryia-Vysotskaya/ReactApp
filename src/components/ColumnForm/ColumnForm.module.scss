@@ -11,10 +11,13 @@
         margin: 5px 10px;
         font-size: 1.2rem;
         letter-spacing: 2px;
+        color: $color-success;
+        font-weight: bold;
     }
 
     input {
         max-width: 100%;
+        color: $color-warning;
     }
 }
 

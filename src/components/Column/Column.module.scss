@@ -8,7 +8,7 @@
   margin: 0 $base-size $base-size 0;
   padding: ($base-size * 1.5);
   border-radius: $radius;
-  box-shadow: 0 math.div($base-size, 4) 0 rgba(0,0,0,0.3);
+  box-shadow: 0 math.div($base-size, 4) 0 rgba(0, 0, 0, 0.3);
   color: $color-dark;
 
   &:last-child {
@@ -16,15 +16,20 @@
   }
 }
 
+.column:hover {
+  transform: scale(1.1);
+}
+
 .title {
   text-align: center;
   font-size: ($base-size * 1.5);
   margin: 0 0 ($base-size * 1.5) 0;
+  color: $color-three;
 }
 
 .icon::before {
   padding-right: $base-size;
-  color: $color-warning;
+  color: $color-success;
   font-size: ($base-size * 2);
   vertical-align: middle;
   position: relative;
@@ -35,9 +40,14 @@
   padding: math.div($base-size, 2) 0;
 }
 
-@media (max-width: 767px) {
-  .column {
-    width: 100%;
-    margin: 0 0 $base-size 0;
+@media (max-width: 768px) {
+  .column, .column:last-child {
+    width: 90%;
+    margin: 20px 25px;
+  }
+
+  .column:hover {
+    transform: scale(1);
+    background: linear-gradient(to right, $color-one, $color-light);
   }
 }
