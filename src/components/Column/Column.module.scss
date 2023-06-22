@@ -5,11 +5,14 @@
   flex-shrink: 0;
   width: calc(33% - 12px);
   background: $color-light;
-  margin: 0 $base-size $base-size 0;
+  margin: 0 $base-size 30px 0;
   padding: ($base-size * 1.5);
   border-radius: $radius;
-  box-shadow: 0 math.div($base-size, 4) 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 math.div($base-size, 4) 0 $color-three;
   color: $color-dark;
+  border: 5px solid;
+  border-image: linear-gradient(to right, $color-three, $color-success);
+  border-image-slice: 1; 
 
   &:last-child {
     margin: 0 0 $base-size 0;
@@ -29,7 +32,10 @@
 
 .icon::before {
   padding-right: $base-size;
-  color: $color-success;
+  background: linear-gradient(to right, $color-success, $color-three);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
   font-size: ($base-size * 2);
   vertical-align: middle;
   position: relative;
@@ -48,6 +54,8 @@
 
   .column:hover {
     transform: scale(1);
-    background: linear-gradient(to right, $color-one, $color-light);
+    background: linear-gradient(to left, $color-four, $color-light);
+    border: 5px outset $color-three;
+
   }
 }

@@ -35,7 +35,7 @@
   }
 
   50% {
-    border-color: #000;
+    border-color: $color-three;
   }
 }
 
@@ -47,6 +47,7 @@
   font-weight: bold;
   -webkit-text-stroke: 1px $color-dark;
   background: linear-gradient(to right, $color-success, $color-warning);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

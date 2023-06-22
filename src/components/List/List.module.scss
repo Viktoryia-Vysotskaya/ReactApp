@@ -50,6 +50,7 @@
   text-align: center;
   -webkit-text-stroke: 1px $color-dark;
   background: linear-gradient(to right, $color-success, $color-warning);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 18px;

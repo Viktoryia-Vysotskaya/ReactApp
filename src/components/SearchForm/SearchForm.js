@@ -13,7 +13,7 @@ const SearchForm = () => {
     };
     return (
         <form className={styles.searchForm} onSubmit={handleSubmit}>
-            <TextInput placeholder="Search..." value={phrase} onChange={e => setPhrase(e.target.value)}/>
+            <TextInput id="searchPhrase" name="searchPhrase" placeholder="Search..." value={phrase} onChange={e => setPhrase(e.target.value)}/>
             <Button type="submit">
                 <span className="fa fa-search" />
             </Button>
