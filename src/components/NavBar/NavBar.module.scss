@@ -1,0 +1,53 @@
+@import '../../styles/settings.scss';
+
+.navbar {
+    background: darken($color-dark, 3%);
+}
+
+.navicon {
+    font-size: 24px;
+}
+
+.navlinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+        margin-left: 10px;
+        animation: zoomIn 8s infinite;
+    }
+
+    li:first-of-type {
+        margin-left: 0;
+    }
+
+    li:hover {
+        text-shadow: 2px 2px 4px $color-three;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+a {
+    text-decoration: none;
+    background: linear-gradient(to right, $color-success, $color-warning, $color-one);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: ($base-size * 2);
+    padding-right: 30px;
+}

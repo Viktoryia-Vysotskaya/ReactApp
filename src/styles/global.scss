@@ -22,4 +22,13 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px 0;
+}
+
 @import "./typography.scss";
