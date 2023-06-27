@@ -1,0 +1,37 @@
+@import '../../styles/settings.scss';
+
+.title {
+    padding: ($base-size * 3) 0;
+    text-align: center;
+    font-size: ($base-size * 3);
+    text-transform: uppercase;
+    color: $color-light;
+    -webkit-text-stroke: 2px $color-one;
+    text-shadow: 2px 2px 4px $color-two;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top:  ($base-size * 3);
+    animation: typing 7s cubic-bezier(0.42, 0, 0.58, 1), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: $color-three;
+    }
+}
