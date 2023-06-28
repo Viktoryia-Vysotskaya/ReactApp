@@ -1,0 +1,69 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.lists {
+    margin-top: $base-size;
+}
+
+.heading {
+    text-align: center;
+    padding: ($base-size * 1) 0;
+    text-align: center;
+    font-size: ($base-size * 3);
+    font-style: italic;
+    font-weight: bold;
+    -webkit-text-stroke: 1px $color-one;
+    background: linear-gradient(to top, $color-light, $color-warning);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: ($base-size * 2);
+    animation: zoomIn 8s forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.listLink {
+    display: block;
+    max-width: $base-size * 40;
+    margin: 40px auto;
+    text-decoration: none;
+    color: $color-dark;
+    background: linear-gradient(to right, $color-four, $color-light);
+    margin-bottom: $base-size;
+    border-radius: $radius;
+    box-shadow: 0 math.div($base-size, 4) 0 $color-warning;
+    padding: $base-size;
+
+    h3 {
+        background: linear-gradient(to right, $color-success, $color-one);
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-align: center;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    p {
+        -webkit-text-fill-color: $color-dark;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+span {
+    padding-right: 20px;
+}

@@ -5,7 +5,7 @@
   flex-shrink: 0;
   width: calc(33% - 12px);
   background: $color-light;
-  margin: 0 $base-size 30px 0;
+  margin: 40px $base-size 30px 0;
   padding: ($base-size * 1.5);
   border-radius: $radius;
   box-shadow: 0 math.div($base-size, 4) 0 $color-three;
@@ -15,7 +15,7 @@
   border-image-slice: 1; 
 
   &:last-child {
-    margin: 0 0 $base-size 0;
+    margin: 40px $base-size 30px 0;
   }
 }
 

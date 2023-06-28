@@ -10,7 +10,8 @@
     text-shadow: 2px 2px 4px $color-two;
     overflow: hidden;
     white-space: nowrap;
-    margin-top:  ($base-size * 3);
+    margin-top: $base-size;
+    margin-bottom: $base-size;
     animation: typing 7s cubic-bezier(0.42, 0, 0.58, 1), blink-caret 0.5s step-end infinite;
 }
 
