@@ -6,16 +6,16 @@
     font-size: ($base-size * 2);
     font-style: italic;
     font-weight: bold;
-    -webkit-text-stroke: 1px $color-dark;
-    background: linear-gradient(to right, $color-success, $color-warning);
+    -webkit-text-stroke: 1px $color-three;
+    background: linear-gradient(to right, $color-light, $color-success, $color-light, $color-success);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: ( $base-size * 4);
+    margin-top: ($base-size * 4);
     animation: zoomIn 8s forwards;
-  }
+}
 
-  @keyframes zoomIn {
+@keyframes zoomIn {
     0% {
         transform: scale(1);
     }

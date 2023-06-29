@@ -2,17 +2,21 @@
 
 .input {
     min-width: 200px;
-    background: $color-light;
     border: 2px solid;
     border-image: linear-gradient(to right, $color-two, $color-success);
-    border-image-slice: 1;    
-    padding: $base-size ($base-size * 1.5);
-    margin: 0 0 $base-size 0;
-    font-family: $font-text;
-    border-radius: $radius;
-    color: $color-warning;
+    border-image-slice: 1;
+    padding: $base-size (
+        $base-size * 1.5
+    );
+margin: 0 0 $base-size 0;
+font-family: $font-text;
+border-radius: $radius;
+color: $color-warning;
+background: linear-gradient(to top, $color-two, $color-light, $color-two);
 }
 
 .input::placeholder {
-    color: $color-dark;
-  }
+    color: $color-three;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -2,24 +2,25 @@
 
 .cardForm {
 
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
 
-    input {
-        max-width: 100%;
-    }
+  input {
+    max-width: 100%;
+    background: linear-gradient(to top, $color-light, $color-four, $color-light);
+  }
 }
 
 @media (max-width: 768px) {
 
-    .cardForm {
-      flex-direction: column;
-      width: 33%;
-    }
-  
-    .cardForm Button {
-      margin-top: 30px;
-    }
+  .cardForm {
+    flex-direction: column;
+    width: 33%;
   }
+
+  .cardForm Button {
+    margin-top: 30px;
+  }
+}

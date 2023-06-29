@@ -19,6 +19,7 @@
     input {
         max-width: 100%;
         color: $color-warning;
+        background: linear-gradient(to top, $color-two, $color-light, $color-two);
     }
 }
 

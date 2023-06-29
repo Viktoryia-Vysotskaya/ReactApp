@@ -11,6 +11,50 @@
     justify-content: space-between;
     font-weight: bold;
     color: $color-warning;
+
+    &:hover {
+        background: linear-gradient(to top, $color-four, $color-light, $color-four);
+    }
+}
+
+.favoriteButton {
+    background: linear-gradient(to top, $color-two, $color-one, $color-two);
+    border: 0;
+    text-align: center;
+    padding: 10px;
+    margin: 0 $base-size $base-size $base-size;
+    border-radius: $radius;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: $transition;
+
+    &:hover {
+        background: $color-two;
+    }
+
+    &.active {
+        background: linear-gradient(to top, $color-two, $color-light, $color-two);
+    }
+}
+
+.favoriteIcon {
+    color: $color-light;
+
+    &:hover {
+        color: $color-dark;
+    }
+
+    &.active {
+        color: $color-warning;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        width: 120px;
+    }
 }
 
 @media (max-width: 768px) {
