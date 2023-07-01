@@ -17,12 +17,12 @@
     }
 }
 
-.favoriteButton {
+.actionButton {
     background: linear-gradient(to top, $color-two, $color-one, $color-two);
     border: 0;
     text-align: center;
-    padding: 10px;
-    margin: 0 $base-size $base-size $base-size;
+    padding: 8px;
+    margin: 0 5px;
     border-radius: $radius;
     cursor: pointer;
     font-weight: 700;
@@ -38,7 +38,7 @@
     }
 }
 
-.favoriteIcon {
+.favoriteIcon, .removeIcon {
     color: $color-light;
 
     &:hover {
@@ -51,8 +51,12 @@
     }
 }
 
+.removeIcon:hover {
+    color: $color-warning;
+}
+
 @media (max-width: 768px) {
-    .button {
+    .buttons {
         width: 120px;
     }
 }
