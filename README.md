@@ -14,11 +14,11 @@
 
 📸 ↴︎
 
-![Alt Text](./src/images/screenshots/3.List2.png)
+![Alt Text](./src/images/screenshots/3.Favorite.png)
 
 📸 ↴︎
 
-![Alt Text](./src/images/screenshots/4.Favorite.png)
+![Alt Text](./src/images/screenshots/4.List2.png)
 
 📸 ↴︎
 
